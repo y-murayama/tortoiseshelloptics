@@ -44,12 +44,12 @@ header{
 #logo h1{
   margin-left:1rem;
 }
-nav {
+#bignav {
   flex-basis: 50%;
   display: flex;
   justify-content: flex-end;
 }
-nav span{
+#bignav span{
   margin-left: 2.29rem;
 }
 
@@ -68,25 +68,8 @@ nav span{
   font-size: 2rem;
   line-height: 1.2;
 }
-
-@media only screen and (max-width:1024px){
-  #heroimage{
-    width:100%;
-    height:22rem;
-  }
-  header{
-    margin-top: 0;
-  }
-  #headline{
-    display: inline-flex;
-    margin-top: 5rem;
-    margin-right: 2rem;
-    background-color: #fff;
-    padding: 0.75rem 4rem;
-  }
-  #headline h2{
-    font-size: 1.33rem;
-  }
+#smallnav{
+  display: none;
 }
 
 /* header and hero image  */
@@ -154,4 +137,108 @@ footer{
   width: auto;
   height: 1.5rem;
   margin-right: 1rem;
+}
+
+@media only screen and (max-width:1024px){
+  #heroimage{
+    width:100%;
+    height:22rem;
+  }
+  header{
+    margin-top: 0;
+  }
+  #headline{
+    display: inline-flex;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    background-color: #fff;
+    padding: 0.75rem 4rem;
+  }
+  #headline h2{
+    font-size: 1.33rem;
+  }
+}
+@media only screen and (max-width:700px){
+  #logo h1{
+    display: none;
+  }
+}
+
+@media only screen and (max-width:560px){
+  #heroimage{
+    width:100%;
+    height:17rem;
+    background-position: 20%;
+  }
+  #headline{
+    width:100%;
+    display: inline-flex;
+    justify-content: center;
+    margin: 9rem 0 0 0;
+    background-color: #fff;
+    padding: 0 1rem;
+  }
+  #headline h2{
+    font-size: 1rem;
+  }
+  #logo h1{
+    display: none;
+  }
+  #bignav{
+    display: none;
+  }
+  #smallnav{
+    display: block;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0px solid #000;
+    padding: 3.77rem 0 2.23rem 0;
+  }
+  .service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height:auto;
+    margin:0 0 1.54rem 0;
+    border: 0px solid #000;
+  }
+  .service h3{
+    font-size: 0.77rem;
+  }
+
+  #descriptions{
+    flex-direction: column;
+    align-items: center;
+    border: 0px solid #000;
+  }
+  .description{
+    width:inherit;
+    display: flex;
+    flex-direction: column;
+    margin:0 0 4rem 0;
+  }
+  #descriptions h4{
+    width:inherit;
+    text-align: center;
+  }
+  #descriptions p{
+    margin:0 1rem 0 1rem;
+    font-size: 0.77rem;
+  }
+  #flogo {
+      width: auto;
+      display: flex;
+      justify-content: center;
+  }
+  #flogo span{
+    display: none;
+  }
 }
