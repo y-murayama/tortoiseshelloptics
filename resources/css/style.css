@@ -1,0 +1,157 @@
+html{
+  font-size: 18px;
+}
+body{
+  font-family: Helvetica;
+  line-height: 1.4;
+}
+.container{
+  width:960px;
+  border: 0px solid #000;
+}
+h2, h4{
+  font-weight: bold;
+}
+/* header and hero image  */
+#heroimage{
+  display: flex;
+  justify-content: center;
+  width:auto;
+  height: 31rem;
+  background-image: url("../images/glasses-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  background-color: cadetblue;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+#logo{
+  display: flex;
+  align-items: center;
+  flex-basis: 50%;
+}
+#logo img{
+  width:auto;
+  height: 1.5rem;
+}
+#logo h1{
+  margin-left:1rem;
+}
+nav {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+nav span{
+  margin-left: 2.29rem;
+}
+
+#waku{
+  display: flex;
+  justify-content: flex-end;
+}
+#headline{
+  display: inline-flex;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  background-color: #fff;
+  padding: 1.5rem 5rem;
+}
+#headline h2{
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width:1024px){
+  #heroimage{
+    width:100%;
+    height:22rem;
+  }
+  header{
+    margin-top: 0;
+  }
+  #headline{
+    display: inline-flex;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    background-color: #fff;
+    padding: 0.75rem 4rem;
+  }
+  #headline h2{
+    font-size: 1.33rem;
+  }
+}
+
+/* header and hero image  */
+
+/* main  */
+#main{
+  display: flex;
+  justify-content: center;
+}
+#services{
+  display: flex;
+  justify-content: center;
+  border: 0px solid #000;
+}
+.service{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+  text-align: center;
+  border: 0px solid #000;
+}
+.service img{
+  width: 5rem;
+}
+.exam img{
+  width: 3.5rem;
+}
+#descriptions{
+  display: flex;
+  justify-content: center;
+  border: 0px solid #000;
+}
+.description{
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+}
+#descriptions h4{
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  width: 10rem;
+  color: #fff;
+}
+/* main  */
+/* footer */
+footer{
+  display: flex;
+  justify-content: center;
+  background-color: azure;
+  border: 0px solid #000;
+}
+#flogo{
+  display: flex;
+  align-items: center;
+  padding:4rem 0 4rem 4rem;
+  border: 0px solid #000;
+}
+#flogo img{
+  width: auto;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
